@@ -4,9 +4,9 @@ import { galleryItems } from './gallery-items.js';
 console.log(galleryItems);
 
 const galleryItemsContainer = document.querySelector('.gallery');
-const CardsMarkup = createGaleryCardsMarkup(galleryItems);
+const cardsMarkup = createGaleryCardsMarkup(galleryItems);
 
-galleryItemsContainer.insertAdjacentHTML('beforeend', CardsMarkup);
+galleryItemsContainer.insertAdjacentHTML('beforeend', cardsMarkup);
 
 function createGaleryCardsMarkup(gallery) {
     return gallery.map(({ preview, original, description }) => {
